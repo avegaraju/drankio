@@ -959,7 +959,7 @@ nav.side-navbar.shrinked .sidebar-header .title {
 * ==========================================================
 */
 nav.navbar {
-  background: #9b101d;
+  background: #d31c16;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
@@ -2509,15 +2509,15 @@ STYLE SWITCHER FOR DEMO
 }
 
 .btn-primary {
-  color: color-yiq(#796aee);
-  background-color: #796aee;
-  border-color: #796aee;
+  color: color-yiq(#fff);
+  background-color: #800000;
+  border-color: #800000;
 }
 
 .btn-primary:hover {
-  color: color-yiq(#5a48ea);
-  background-color: #5a48ea;
-  border-color: #503ce9;
+  color: color-yiq(#800000);
+  background-color: #800000;
+  border-color: #800000;
 }
 
 .btn-primary:focus,
@@ -2536,9 +2536,9 @@ STYLE SWITCHER FOR DEMO
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: color-yiq(#503ce9);
-  background-color: #503ce9;
-  border-color: #4631e7;
+  color: color-yiq(#800000);
+  background-color: #800000;
+  border-color: #800000;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -2869,10 +2869,10 @@ STYLE SWITCHER FOR DEMO
 }
 
 .btn-outline-primary {
-  color: #796aee;
+  color: #800000;
   background-color: transparent;
   background-image: none;
-  border-color: #796aee;
+  border-color: #800000;
 }
 
 .btn-outline-primary:hover {
