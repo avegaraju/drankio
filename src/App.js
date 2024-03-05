@@ -5,10 +5,11 @@ import "../src/vendor/bootstrap/css/bootstrap.min.css";
 import "../src/vendor/font-awesome/css/font-awesome.min.css";
 import Header from "../src/components/Header";
 import Main from "./components/Main";
-import Login from "./components/Login";
+import Login from "./components/Auth/Login";
 import { Routes, Route } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import Feed from "./components/Feed";
+import Register from "./components/Auth/Register";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/feed" element={<Feed />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </GoogleOAuthProvider>

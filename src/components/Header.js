@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import SearchBox from "./search/SearchBox";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+import Login from "./Auth/Login";
 
 function Header() {
   const [showSearchBox, setShowSearchBox] = useState(false);
@@ -30,7 +30,7 @@ function Header() {
             {/* <!-- Navbar Menu --> */}
             <ul className="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
               {/* <!-- Search--> */}
-              <li className="nav-item d-flex align-items-center">
+              {/* <li className="nav-item d-flex align-items-center">
                 <a id="search" href="#">
                   <i
                     className="icon-search"
@@ -41,13 +41,13 @@ function Header() {
                 </a>
               </li>
               {/* <!-- Register    --> */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a href="register.html" className="nav-link register">
                   {" "}
                   <span className="d-none d-sm-inline">Register</span>
                   <i className="fa fa-register"></i>
                 </a>
-              </li>
+              </li>  */}
               {/* <!-- Login    --> */}
               <li className="nav-item">
                 <Link to="/login">

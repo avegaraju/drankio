@@ -1852,6 +1852,13 @@ input[type="submit"] {
   background: #fff;
 }
 
+p span:after,
+p span:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
+  size: 1px;
+}
+
 input.input-material {
   width: 100%;
   border: none;
