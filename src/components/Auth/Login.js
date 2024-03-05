@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import InfoPanel from "./InfoPanel";
+import GoogleLoginButton from "./GoogleLoginButton";
 
 function Login() {
   return (
@@ -74,10 +75,14 @@ function Login() {
                       <span className="text-sm text-paleBlue">Signup</span>
                     </Link>
                     <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                    <div className="input-material-group mb-3">
+                      <p>
+                        <span>
+                          {"       "} or {"       "}
+                        </span>
+                      </p>
+                    </div>
+                    <GoogleLoginButton />
                   </form>
                 </div>
               </div>

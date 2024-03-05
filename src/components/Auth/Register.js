@@ -1,16 +1,9 @@
 import { GoogleLogin } from "@react-oauth/google";
 import { Link } from "react-router-dom";
 import InfoPanel from "./InfoPanel";
+import GoogleLoginButton from "./GoogleLoginButton";
 
 function Register() {
-  const handleSuccess = (credentialsResponse) => {
-    console.log(credentialsResponse);
-  };
-
-  const handleError = () => {
-    console.log("login failed");
-  };
-
   return (
     <div className="login-page">
       <div className="container d-flex align-items-center position-relative py-5">
@@ -27,16 +20,7 @@ function Register() {
                     method="get"
                     action="login.html"
                   >
-                    <div>
-                      <GoogleLogin
-                        onSuccess={handleSuccess}
-                        onError={handleError}
-                        theme="filled_blue"
-                        size="large"
-                        text="continue_with"
-                      />
-                    </div>
-                    <br />
+                    <GoogleLoginButton />
                     <div className="input-material-group mb-3">
                       <p>
                         <span>
