@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import SearchBox from "./search/SearchBox";
+import { Link } from "react-router-dom";
+import Login from "./Login";
 
 function Header() {
   const [showSearchBox, setShowSearchBox] = useState(false);
@@ -15,10 +17,7 @@ function Header() {
             {/* <!-- Navbar Header--> */}
             <div className="navbar-header">
               {/* <!-- Navbar Brand --> */}
-              <a
-                href="index.html"
-                className="navbar-brand d-none d-sm-inline-block"
-              >
+              <Link to="/" className="navbar-brand d-none d-sm-inline-block">
                 <div className="brand-text d-none d-lg-inline-block">
                   <span>Drank </span>
                   <strong>IO</strong>
@@ -26,7 +25,7 @@ function Header() {
                 <div className="brand-text d-none d-sm-inline-block d-lg-none">
                   <strong>DIO</strong>
                 </div>
-              </a>
+              </Link>
             </div>
             {/* <!-- Navbar Menu --> */}
             <ul className="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
@@ -49,13 +48,12 @@ function Header() {
                   <i className="fa fa-register"></i>
                 </a>
               </li>
-              {/* <!-- Logout    --> */}
+              {/* <!-- Login    --> */}
               <li className="nav-item">
-                <a href="login.html" className="nav-link logout">
-                  {" "}
-                  <span className="d-none d-sm-inline">Log In</span>
+                <Link to="/login">
+                  <span className="d-none d-sm-inline">Log In </span>
                   <i className="fa fa-sign-in"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
