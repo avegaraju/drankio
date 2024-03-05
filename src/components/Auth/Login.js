@@ -4,15 +4,6 @@ import GoogleLoginButton from "./GoogleLoginButton";
 
 function Login() {
   return (
-    // <div>
-    //   <GoogleLogin
-    //     onSuccess={handleSuccess}
-    //     onError={handleError}
-    //     theme="filled_blue"
-    //     size="large"
-    //     text="continue_with"
-    //   />
-    // </div>
     <div className="login-page">
       <div className="container d-flex align-items-center position-relative py-5">
         <div className="card shadow-sm w-100 rounded overflow-hidden bg-none">
